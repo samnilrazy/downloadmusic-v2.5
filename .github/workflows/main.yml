@@ -20,10 +20,10 @@ jobs:
         run: pip install youtube_dl
         
       - name: youtubesearchpython
-        run: pip install youtubesearchpython
+        run: pip install youtube-search-python
         
       - name: dotenv
-        run: pip install dotenv
+        run: pip install python-dotenv
         
       - name: install telegrambotapi
         run: pip install pyTelegramBotAPI
