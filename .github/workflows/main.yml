@@ -1,0 +1,45 @@
+name: Python Script Workflow
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Python Version
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 # Install the python version needed
+          
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip requests
+        
+      - name: instalar ytdl
+        run: pip install youtube_dl
+        
+      - name: install process
+        run: pip install multiprocessing
+        
+      - name: youtubesearchpython
+        run: pip install youtubesearchpython
+        
+      - name: dotenv
+        run: pip install dotenv
+        
+      - name: json
+        run: pip install json
+        
+      - name: os.path
+        run: pip install os.path
+        
+      - name: install telegrambotapi
+        run: pip install pyTelegramBotAPI
+        
+      - name: install bs4
+        run: pip install bs4
+        
+      - name: Execute Python Script # Run the run.py on the repository root directory
+        run: |
+          python bot.py
