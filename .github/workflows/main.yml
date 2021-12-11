@@ -19,20 +19,11 @@ jobs:
       - name: instalar ytdl
         run: pip install youtube_dl
         
-      - name: install process
-        run: pip install multiprocessing
-        
       - name: youtubesearchpython
         run: pip install youtubesearchpython
         
       - name: dotenv
         run: pip install dotenv
-        
-      - name: json
-        run: pip install json
-        
-      - name: os.path
-        run: pip install os.path
         
       - name: install telegrambotapi
         run: pip install pyTelegramBotAPI
